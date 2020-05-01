@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/lado"
+            android:layout_width="270dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edt_text"
+            android:backgroundTint="#A3B9ECFF"
+            android:drawablePadding="10dp"
+            android:hint="Digite o um dos lados"
+            android:inputType="number|text"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/calcular_hexagono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lado"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edt_text"
+            android:backgroundTint="#1775D1"
+            android:text="Calcular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#010911" />
+
+        <TextView
+            android:id="@+id/resultado_hexagono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calcular_hexagono"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Obs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultado_hexagono"
+            android:layout_marginTop="150dp"
+            android:paddingLeft="20dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+</ScrollView>

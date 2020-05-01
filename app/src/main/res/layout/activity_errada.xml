@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="274dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="657dp"
+        android:background="@drawable/edt_text"
+        android:ems="7"
+        android:hint="Digite o A"
+        android:inputType="number|text"
+        android:paddingLeft="10dp"
+        android:textColorLink="#1775D1"
+        android:textCursorDrawable="@color/design_default_color_primary" />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="274dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="485dp"
+        android:background="@drawable/edt_text"
+        android:ems="7"
+        android:hint="Digite o B"
+        android:inputType="number|text"
+        android:paddingLeft="10dp"
+        android:textColorLink="#1775D1"
+        android:textCursorDrawable="@color/design_default_color_primary" />
+
+    <EditText
+        android:id="@+id/c"
+        android:layout_width="274dp"
+        android:layout_height="61dp"
+        android:layout_alignEnd="@+id/calcular"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="493dp"
+        android:background="@drawable/edt_text"
+        android:ems="7"
+        android:hint="Digite o C"
+        android:inputType="number|text"
+        android:paddingLeft="10dp"
+        android:textColorLink="#1775D1"
+        android:textCursorDrawable="@color/design_default_color_primary" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginBottom="374dp"
+        android:background="@drawable/edt_text"
+        android:backgroundTint="#1775D1"
+        android:paddingLeft="10sp"
+        android:text="Calcular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#010911" />
+
+    <TextView
+        android:id="@+id/MeuTexto"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/texto_sem_raiz"
+        android:layout_width="334sp"
+        android:layout_height="297sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="serif"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

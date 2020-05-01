@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MathEasy</string>
+    <string name="title_activity_cubo2">Cubo2</string>
+    <string name="title_activity_cubos">Cubos</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/aresta"
+        style="@style/edt_text"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:hint="Digite o lado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/dropDown"
+        style="@style/drop_down"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toEndOf="@+id/aresta"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/calcular_cubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dropDown"
+        android:layout_gravity="center"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/edt_text"
+        android:backgroundTint="#1775D1"
+        android:text="Calcular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#010911"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aresta" />
+
+    <TextView
+        android:id="@+id/Resultado_cubo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calcular_cubo"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcular_cubo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

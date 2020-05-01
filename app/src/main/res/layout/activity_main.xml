@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/activity_main_lista_de_botoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFF5FD" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        app:menu="@menu/navigation_menu">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Desenvolvedores"
+                    android:textSize="25dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="236dp"
+                    android:layout_height="215dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="10dp"
+                    android:src="@drawable/foto_redonda"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/my_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Nome: Luciano Evaldt Magnus \nDesenvolvedor BackEnd em Java \nAcadêmico de Análise e desenvolvimento de sistemas. "
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:layout_width="236dp"
+                    android:layout_height="215dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="10dp"
+                    android:src="@drawable/foto_airi"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/name_Airiane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Nome: Airiane Melo De Matos \nDesign de telas \nAcadêmica de Análise e desenvolvimento de sistemas. "
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:layout_width="236dp"
+                    android:layout_height="215dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="10dp"
+                    android:src="@drawable/foto_kemeli"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/name_Kemeli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="Nome: Kemeli Model Cardoso \nIdealizadora do projeto \nAcadêmica de Administração.\n "
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

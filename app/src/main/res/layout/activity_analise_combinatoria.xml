@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/n"
+            android:layout_width="270dp"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edt_text"
+            android:backgroundTint="#A3B9ECFF"
+            android:drawablePadding="10dp"
+            android:hint="Digite o N"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/p"
+            style="@android:style/Widget.EditText"
+            android:layout_width="270dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/n"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_text"
+            android:backgroundTint="#A3B9ECFF"
+            android:hint="Digite o P"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/calcular_analise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edt_text"
+            android:backgroundTint="#1775D1"
+            android:text="Calcular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#010911" />
+
+        <TextView
+            android:id="@+id/res_analise"
+            android:layout_width="match_parent"
+            android:layout_height="396dp"
+            tools:text="aaaa" />
+
+
+    </LinearLayout>
+</ScrollView>
